@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    /* line-height: 150%;   */
+}
+
+:root {
+    --bg-color: #E5E5E5;
+    --dark-blue: #03002e;
+    --light-blue: #90d5ff;
+    --blue: #004680;
+    --gray: #8b8b8b;
+    --black: #000000;
+    --white: #fff;
+    --gray-2: #e6e5e5;
+}
+
+header {
+    padding: 1% 0 2% 2%;
+    display: flex;
+    align-items: center;
+    gap: 0.5%;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    box-shadow: 0 0 10px 2px var(--gray);
+}
+
+.logoAlura {
+    width: 8%;
+}
+
+h1 {
+    color: #004680;
+    font-weight: 600;
+    align-items: center;
+    padding-top: 0.7%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 35%;
+    margin-top: 35px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 35%;
+    margin-top: 40px;
+
+}
+
+.firstDisplay {
+    resize: none;
+    text-align: center;
+    resize: none;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.secondDisplay {
+    display: none;
+    resize: none;
+}
+
+.label_one,
+.label_two {
+    display: block;
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.insert_text,
+.copy_text {
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    text-shadow: 0px 0px 1px var(--gray);
+    border: none;
+    border-radius: 2%;
+    resize: none;
+    padding: 4%;
+}
+
+.insert_text:focus,
+.copy_text:focus {
+    border-color: var(--black);
+    outline: none;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1%;
+    padding: 2% 0;
+}
+
+h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.figure {
+    width: 230px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 38%;
+}
+
+.btnCriptografar {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 3% 7%;
+    border: solid 2px var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+    filter: blur(0.2px);
+}
+
+.btnDesecriptografar {
+    background-color: var(--light-blue);
+    color: var(--blue);
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: blur(0.2px);
+}
+
+.btn {
+    display: flex;
+    justify-content: right;
+    padding-top: 6.5%;
+}
+
+.copyBtn {
+    background-color: var(--light-blue);
+    color: var(--blue);
+    padding: 3% 7%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: blur(0.2px);
+}

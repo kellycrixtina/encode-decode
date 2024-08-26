@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Decoder</title>
+    <link rel="icon" type="image/x-icon" href="./assets/a-logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logoAlura" src="./assets/alura.png" alt="logo da Alura">
+        <h1>| Decodificador de texto</h1>
+    </header>
+    <main>
+        <section class="first">
+            <label class="label_one" for="insert_text">Digite seu texto:</label>
+            <textarea id="insert_text" name="insert_text" class="insert_text" placeholder="..." rows="10"
+                cols="20"></textarea>
+            <div class="information">
+                <img src="./assets/exclamation.png" alt="ponto de exclamação">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="buttons">
+                <button class="btnCriptografar" onclick="botaoEncriptar()">Criptografar</button>
+                <button class="btnDesecriptografar" onclick="botaoDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="second">
+            <label class="label_two" for="copy_text">Copie seu texto:</label>
+            <section class="firstDisplay">
+                <figure>
+                    <img class="figure" src="./assets/seach.svg" alt="">
+                </figure>
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+
+            </section>
+            <section class="secondDisplay">
+                <textarea id="copy_text" name="copy_text" class="copy_text" rows="10" cols="20"></textarea>
+            </section>
+            <div class="btn">
+                <button class="copyBtn" onclick="copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
